@@ -34,15 +34,20 @@ rawfile=$netlist_dir/thing.raw
 
 
 
-y2=0.94
+
 sim_type=tran
 
-y1=0.86
 
 
 
 
-x1=0}
+
+x1=0
+
+y1=0.87
+
+x2=1e-06
+y2=0.92}
 B 2 320 260 1120 660 {flags=graph
 
 
@@ -71,8 +76,10 @@ rawfile=$netlist_dir/thing.raw
 
 
 x1=0
-y2=20m
-y1=0}
+
+y1=0
+x2=1e-06
+y2=30u}
 N -20 150 -10 150 {
 lab=#net1}
 N -20 170 -10 170 {
@@ -85,14 +92,12 @@ N -340 150 -320 150 {
 lab=#net2}
 N -340 120 -340 150 {
 lab=#net2}
-N -340 120 60 120 {
-lab=#net2}
 N 60 190 80 190 {
-lab=#net2}
+lab=#net3}
 N 60 120 60 190 {
-lab=#net2}
+lab=#net3}
 N -20 190 60 190 {
-lab=#net2}
+lab=#net3}
 N 130 -10 130 0 {
 lab=VSS}
 N 230 -10 230 -0 {
@@ -102,13 +107,23 @@ lab=GND}
 N 130 60 130 70 {
 lab=GND}
 N 80 190 120 190 {
-lab=#net2}
+lab=#net3}
 N 80 250 80 260 {
 lab=GND}
 N 180 190 200 190 {
 lab=Out}
 N -330 250 -330 260 {
 lab=GND}
+N -130 100 60 100 {
+lab=#net3}
+N 60 100 60 120 {
+lab=#net3}
+N -340 100 -190 100 {
+lab=#net2}
+N -340 100 -340 120 {
+lab=#net2}
+N -430 150 -340 150 {
+lab=#net2}
 C {devices/ipin.sym} -340 170 0 0 {name=p4 lab=in}
 C {devices/opin.sym} 195 190 0 0 {name=p5 lab=Out}
 C {devices/ipin.sym} -340 190 0 0 {name=p6 lab=Bias}
@@ -170,5 +185,16 @@ write thing.raw
 .endc
 "}
 C {devices/vsource.sym} -330 220 0 0 {name=V3 value=1.2 savecurrent=false}
-C {devices/gnd.sym} -330 260 0 0 {name=l4 lab=GND}
+C {devices/gnd.sym} -430 220 0 0 {name=l4 lab=GND}
 C {devices/ammeter.sym} -10 120 0 0 {name=Vmeas savecurrent=false}
+C {devices/res.sym} -160 100 1 0 {name=R2
+value=2k
+footprint=1206
+device=resistor
+m=1}
+C {devices/res.sym} -430 180 2 0 {name=R3
+value=1k
+footprint=1206
+device=resistor
+m=1}
+C {devices/gnd.sym} -330 260 0 0 {name=l5 lab=GND}

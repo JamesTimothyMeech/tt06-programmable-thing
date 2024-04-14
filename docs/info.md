@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+It is a set of inverters each with their own input and output pins.
 
 ## How to test
 
-Explain how to use your project
+Choose an inverter and find the pinout for it in the info.yaml file. The apply your input and measure the output.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Something to generate signals. This could be the TT06 printed circuit board or an expensive signal generator.

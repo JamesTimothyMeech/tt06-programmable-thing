@@ -59,16 +59,12 @@ unitx=1
 logx=1
 logy=0
 rawfile=$netlist_dir/testbench.raw
-y2=23
+y2=1
 sim_type=ac
-y1=0.0096
-color="4 5 6 8 9 10"
+y1=5e-08
+color="4 7"
 node="out%0
-out%1
-out%2
-out%3
-out%4
-out%5"}
+outparax%0"}
 N 560 -850 560 -840 {
 lab=GND}
 N 560 -920 560 -910 {
@@ -105,6 +101,32 @@ N 1010 -670 1130 -670 {
 lab=#net1}
 N 1130 -730 1130 -670 {
 lab=#net1}
+N 1120 -530 1170 -530 {
+lab=#net3}
+N 1140 -470 1140 -450 {
+lab=GND}
+N 1230 -530 1250 -530 {
+lab=outparax}
+N 1250 -530 1270 -530 {
+lab=outparax}
+N 1120 -570 1130 -570 {
+lab=VDD}
+N 1120 -550 1130 -550 {
+lab=VSS}
+N 640 -570 670 -570 {
+lab=in}
+N 670 -570 710 -570 {
+lab=in}
+N 770 -570 820 -570 {
+lab=#net4}
+N 790 -570 790 -470 {
+lab=#net4}
+N 790 -470 940 -470 {
+lab=#net4}
+N 1000 -470 1120 -470 {
+lab=#net3}
+N 1120 -530 1120 -470 {
+lab=#net3}
 C {devices/code.sym} 1150 -1370 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -165,14 +187,14 @@ value="
 .control
 save all
 let vddc = 1   
-repeat 7
-  alter R1 $&vddc 
+*repeat 7
+  *alter R1 $&vddc 
   ac dec 10 1 1e9    
-  let vddc = vddc * 10 
+  *let vddc = vddc * 10 
   write testbench.raw  
   set appendwrite 
   reset 
-end
+*end
 
 *quit 0
 .endc
@@ -193,6 +215,40 @@ value=1u
 footprint=1206
 device="ceramic capacitor"}
 C {devices/res.sym} 980 -670 1 0 {name=R1
+value=100k
+footprint=1206
+device=resistor
+m=1}
+C {devices/gnd.sym} 1140 -450 0 0 {name=l5 lab=GND
+value=1.8}
+C {devices/iopin.sym} 640 -570 2 0 {name=p7 lab=in
+}
+C {devices/iopin.sym} 1270 -530 0 0 {name=p8 lab=outparax}
+C {devices/res.sym} 1200 -530 1 0 {name=R3
+value=500
+footprint=1206
+device=resistor
+m=1}
+C {devices/capa.sym} 1140 -500 0 0 {name=C3
+m=1
+value=5p
+footprint=1206
+device="ceramic capacitor"}
+C {inverter.sym} 970 -550 0 0 {name=x2
+schematic=inverter_parax.sim
+spice_sym_def="tcleval(.include [file normalize ../mag/inverter.sim.spice])"
+tclcommand="textwindow [file normalize ../mag/inverter.sim.spice]"
+}
+C {devices/lab_pin.sym} 1130 -570 2 0 {name=p9 sig_type=std_logic lab=VDD
+value=1.8}
+C {devices/lab_pin.sym} 1130 -550 2 0 {name=p10 sig_type=std_logic lab=VSS
+value=1.8}
+C {devices/capa.sym} 740 -570 3 0 {name=C4
+m=1
+value=1u
+footprint=1206
+device="ceramic capacitor"}
+C {devices/res.sym} 970 -470 1 0 {name=R4
 value=100k
 footprint=1206
 device=resistor

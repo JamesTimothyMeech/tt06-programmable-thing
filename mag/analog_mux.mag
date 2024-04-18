@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713456355
+timestamp 1713470770
 << pwell >>
 rect 106 -10 382 262
 << locali >>
@@ -526,8 +526,6 @@ rlabel metal4 120 0 360 4352 1 VGND
 port 1 n ground input
 rlabel metal4 3320 0 3560 4352 1 VPWR
 port 2 n power input
-rlabel metal4 1750 3952 1930 4352 1 mod
-port 3 n analog bidirectional
 rlabel metal4 1750 2352 1930 2752 1 bus
 port 4 n analog bidirectional
 rlabel metal3 890 4172 950 4352 1 ctrl
@@ -535,7 +533,6 @@ port 5 n signal input
 flabel metal1 1242 -16 1442 184 0 FreeSans 256 0 0 0 VGND
 flabel metal1 2150 2 2350 202 0 FreeSans 256 0 0 0 VPWR
 port 0 nsew
-flabel metal1 2786 674 2986 874 0 FreeSans 256 0 0 0 mod
 flabel metal1 3698 2356 3898 2556 0 FreeSans 256 0 0 0 bus
 flabel metal1 -240 4076 -40 4276 0 FreeSans 256 0 0 0 ctrl
 << properties >>

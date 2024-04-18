@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713457832
+timestamp 1713470770
 << metal1 >>
 rect 30308 40674 30508 40680
 rect 30308 40042 30508 40474
@@ -247,7 +247,7 @@ rect 22480 0 22600 200
 rect 26896 0 27016 200
 rect 31200 0 31432 228
 use analog_mux  analog_mux_0 ~/Desktop/TinyTapeout/TinyTapeoutAnalog/tt06-programmable-thing/mag
-timestamp 1713456355
+timestamp 1713470770
 transform 0 1 26232 -1 0 40002
 box -240 -16 3910 4523
 use inverter  inverter_0 ~/Desktop/TinyTapeout/TinyTapeoutAnalog/tt06-programmable-thing/mag

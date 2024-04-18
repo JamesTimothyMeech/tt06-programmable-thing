@@ -1,0 +1,297 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_0p35 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_0p35 are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_xhigh_po_0p35 |Circuit 2: sky130_fd_pr__res_xhigh_po_0p35 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_xhigh_po_0p35 and sky130_fd_pr__res_xhigh_po_0p35 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__nfet_01v8_lvt are black boxes.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8_lvt     |Circuit 2: sky130_fd_pr__nfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8_lvt and sky130_fd_pr__nfet_01v8_lvt are equivalent.
+
+Circuit 2 cell inverter is a black box; will not flatten Circuit 1
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+OUT                                        |OUT                                        
+IN                                         |IN                                         
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes inverter and inverter are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_NRQ53D in circuit analog_mux (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_KNBXRF in circuit analog_mux (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XJBLHL in circuit analog_mux (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_MUCXQQ in circuit analog_mux (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_9LK66Y in circuit analog_mux (0)(1 instance)
+
+Class analog_mux (0):  Merged 28 parallel devices.
+Subcircuit summary:
+Circuit 1: analog_mux                      |Circuit 2: analog_mux                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__res_xhigh_po_0p35 (1)        |sky130_fd_pr__res_xhigh_po_0p35 (1)        
+sky130_fd_pr__pfet_01v8 (4->2)             |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8_lvt (21->1)        |sky130_fd_pr__pfet_01v8_lvt (1)            
+sky130_fd_pr__nfet_01v8_lvt (7->1)         |sky130_fd_pr__nfet_01v8_lvt (1)            
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: analog_mux                      |Circuit 2: analog_mux                      
+-------------------------------------------|-------------------------------------------
+ctrl                                       |ctrl                                       
+bus                                        |bus                                        
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes analog_mux and analog_mux are equivalent.
+
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: clk
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ena
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: rst_n
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ua[1]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ua[2]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ua[3]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ua[6]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ua[7]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[1]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[2]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[3]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[4]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[5]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[6]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[7]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[0]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[1]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[2]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[3]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[4]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[5]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[6]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[7]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[7]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[6]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[5]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[4]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[3]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[2]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[1]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[7]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[6]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[5]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[4]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[3]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[2]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[1]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[0]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ua[7]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ua[6]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ua[3]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ua[2]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ua[1]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ena
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: clk
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: rst_n
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Removing zero-valued device r from cell tt_um_JamesTimothyMeech_inverter (0) makes a better match
+Making another compare attempt.
+
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: clk
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ena
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: rst_n
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ua[1]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ua[2]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ua[3]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ua[6]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ua[7]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[1]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[2]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[3]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[4]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[5]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[6]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: ui_in[7]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[0]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[1]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[2]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[3]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[4]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[5]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[6]
+Cell tt_um_JamesTimothyMeech_inverter (0) disconnected node: uio_in[7]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[7]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[6]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[5]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[4]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[3]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[2]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ui_in[1]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[7]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[6]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[5]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[4]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[3]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[2]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[1]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: uio_in[0]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ua[7]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ua[6]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ua[3]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ua[2]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ua[1]
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: ena
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: clk
+Cell tt_um_JamesTimothyMeech_inverter (1) disconnected node: rst_n
+Subcircuit summary:
+Circuit 1: tt_um_JamesTimothyMeech_inverte |Circuit 2: tt_um_JamesTimothyMeech_inverte 
+-------------------------------------------|-------------------------------------------
+inverter (1)                               |inverter (1)                               
+analog_mux (1)                             |analog_mux (1)                             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: tt_um_JamesTimothyMeech_inverte |Circuit 2: tt_um_JamesTimothyMeech_inverte 
+-------------------------------------------|-------------------------------------------
+ua[4]                                      |ua[4]                                      
+ua[5]                                      |ua[5]                                      
+ui_in[0]                                   |ui_in[0]                                   
+ua[0]                                      |ua[0]                                      
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+clk                                        |clk                                        
+ena                                        |ena                                        
+rst_n                                      |rst_n                                      
+ua[1]                                      |ua[1]                                      
+ua[2]                                      |ua[2]                                      
+ua[3]                                      |ua[3]                                      
+ua[6]                                      |ua[6]                                      
+ua[7]                                      |ua[7]                                      
+ui_in[1]                                   |ui_in[1]                                   
+ui_in[2]                                   |ui_in[2]                                   
+ui_in[3]                                   |ui_in[3]                                   
+ui_in[4]                                   |ui_in[4]                                   
+ui_in[5]                                   |ui_in[5]                                   
+ui_in[6]                                   |ui_in[6]                                   
+ui_in[7]                                   |ui_in[7]                                   
+uio_in[0]                                  |uio_in[0]                                  
+uio_in[1]                                  |uio_in[1]                                  
+uio_in[2]                                  |uio_in[2]                                  
+uio_in[3]                                  |uio_in[3]                                  
+uio_in[4]                                  |uio_in[4]                                  
+uio_in[5]                                  |uio_in[5]                                  
+uio_in[6]                                  |uio_in[6]                                  
+uio_in[7]                                  |uio_in[7]                                  
+uio_oe[0]                                  |uio_oe[0]                                  
+uio_oe[1]                                  |uio_oe[1]                                  
+uio_oe[2]                                  |uio_oe[2]                                  
+uio_oe[3]                                  |uio_oe[3]                                  
+uio_oe[4]                                  |uio_oe[4]                                  
+uio_oe[5]                                  |uio_oe[5]                                  
+uio_oe[6]                                  |uio_oe[6]                                  
+uio_oe[7]                                  |uio_oe[7]                                  
+uio_out[0]                                 |uio_out[0]                                 
+uio_out[1]                                 |uio_out[1]                                 
+uio_out[2]                                 |uio_out[2]                                 
+uio_out[3]                                 |uio_out[3]                                 
+uio_out[4]                                 |uio_out[4]                                 
+uio_out[5]                                 |uio_out[5]                                 
+uio_out[6]                                 |uio_out[6]                                 
+uio_out[7]                                 |uio_out[7]                                 
+uo_out[0]                                  |uo_out[0]                                  
+uo_out[1]                                  |uo_out[1]                                  
+uo_out[2]                                  |uo_out[2]                                  
+uo_out[3]                                  |uo_out[3]                                  
+uo_out[4]                                  |uo_out[4]                                  
+uo_out[5]                                  |uo_out[5]                                  
+uo_out[6]                                  |uo_out[6]                                  
+uo_out[7]                                  |uo_out[7]                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tt_um_JamesTimothyMeech_inverter and tt_um_JamesTimothyMeech_inverter are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -23,10 +23,24 @@ inverter inverter (
     .IN(ua[5])
     );
 
-analog_mux analog_mux (
+analog_mux analog_mux0 (
     .VPWR(VPWR),
     .VGND(VGND),
     .ctrl(ui_in[0]),
+    .bus(ua[0])
+    );
+
+analog_mux analog_mux1 (
+    .VPWR(VPWR),
+    .VGND(VGND),
+    .ctrl(ui_in[1]),
+    .bus(ua[0])
+    );
+
+analog_mux analog_mux2 (
+    .VPWR(VPWR),
+    .VGND(VGND),
+    .ctrl(ui_in[2]),
     .bus(ua[0])
     );
 

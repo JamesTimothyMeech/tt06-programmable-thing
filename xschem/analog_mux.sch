@@ -18,8 +18,6 @@ N 930 -360 930 -280 {
 lab=mod}
 N 900 -280 930 -280 {
 lab=mod}
-N 930 -360 1050 -360 {
-lab=mod}
 N 870 -460 870 -420 {
 lab=VPWR}
 N 870 -420 970 -420 {
@@ -129,10 +127,11 @@ N 1030 -220 1030 -200 {
 lab=VGND}
 N 1010 -250 1010 -140 {
 lab=VGND}
+N 1030 -370 1030 -360 {}
+N 930 -370 1030 -370 {}
 C {devices/iopin.sym} 320 -700 2 0 {name=p1 lab=VPWR}
 C {devices/iopin.sym} 280 -140 2 0 {name=p2 lab=VGND}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Harald Pretl"}
-C {devices/iopin.sym} 1050 -360 0 0 {name=p6 lab=mod}
 C {devices/iopin.sym} 670 -360 0 1 {name=p7 lab=bus}
 C {sky130_fd_pr/nfet_01v8.sym} 550 -270 0 0 {name=M4
 L=0.15

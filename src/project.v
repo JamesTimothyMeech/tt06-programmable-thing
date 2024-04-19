@@ -114,6 +114,27 @@ analog_mux analog_mux_12 (
     .bus(ua[0])
     );
 
+analog_mux analog_mux_13 (
+    .VPWR(VPWR),
+    .VGND(VGND),
+    .ctrl(uio_in[5]),
+    .bus(ua[0])
+    );
+
+analog_mux analog_mux_14 (
+    .VPWR(VPWR),
+    .VGND(VGND),
+    .ctrl(uio_in[6]),
+    .bus(ua[0])
+    );
+
+analog_mux analog_mux_15 (
+    .VPWR(VPWR),
+    .VGND(VGND),
+    .ctrl(uio_in[7]),
+    .bus(ua[0])
+    );
+
 assign uo_out[0] = VGND;
 assign uo_out[1] = VGND;
 assign uo_out[2] = VGND;
